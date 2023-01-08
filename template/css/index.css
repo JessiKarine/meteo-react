@@ -1,0 +1,167 @@
+body { 
+    min-height: 80vh;
+    font-family: sans-serif;
+    background: url(../img/13-Ventura-Light.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.window { 
+    background-color: #323536b2;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    left: 50px;
+    bottom: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.window__header { 
+    padding: 10px 15px;
+    background-color: #434546;
+}
+.window__header--buttons { 
+    display: flex;
+}
+.window__header--button { 
+    width: 15px;
+    height: 15px;
+    background-color: #8e8f90;
+    margin-right: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.window__body { 
+    flex : 1 ;
+    padding: 15px;
+    display: flex;
+    flex-direction: row;
+    max-height: 100%;
+    overflow: hidden;
+}
+.card { 
+    border-radius: 10px;
+    padding  : 10px ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card__body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.card--small { 
+    width: 25%;
+}
+.card--full { 
+    flex: 1;
+}
+.card--dark { 
+    background-color: rgba(19, 19, 19, 0.986);
+}
+.card--custom { 
+    background-color: black;
+    color: white;
+}
+.card--search { 
+    margin-right: 15px;
+    color: white;
+}
+.card--search .card__header {
+    margin-bottom: 10px; 
+}
+.card--search__items { 
+    padding : 0 10px ;
+}
+.card--search__item { 
+    padding : 15px 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.card--search__item:hover { 
+    background-color: white;
+    color: black;
+}
+.card--results { 
+    padding  : 0px ;
+}
+.card--results .card__header{ 
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    overflow: hidden;
+    /*background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(5,82,96,1) 0%, rgba(56,149,205,1) 59%, rgba(0,121,255,1) 100%);*/
+    background: url(https://files.elfsightcdn.com/_assets/weather/bg-images/02n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.card--results .card__body { 
+    flex: 1;
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.result__details { 
+    padding: 30px 20px;
+}
+.result__city { 
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.result__temperature { 
+    font-size: 5rem;
+    font-weight: bold;
+}
+.result__label {
+    font-size: 1.2rem;
+}
+.card--border { 
+    border: 1px solid rgba(19, 19, 19, 0.15);
+}
+.card--item { 
+    flex: 1;
+    color : black;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: white;
+}
+.card--item:hover { 
+    filter: brightness(0.95);
+}
+.card--item:not(:last-child) { 
+    margin-right: 15px;
+}
+.card--item__details { 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    position: relative;
+}
+
+.card--item__details .details__title { 
+    font-size: 1.3rem;
+}
+.card--item--multiple  .card--item__details .details__value { 
+    font-size: 3em;
+}
+.card--item--multiple  .card--item__details .details__value span { 
+    font-size: 0.4em;
+}
+.card--item__details .details__value{ 
+    font-size: 10em;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.card--item__details .details__value span{ 
+    font-size: 0.1em;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
