@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import CardItem from '../../component/CardItem/CardItem';
 import MenuSearch from '../../component/MenuSearch/MenuSearch';
-import WeatherService from '../../services/Weather.service';
+import WeatherService from '../../../services/Weather.service';
 import './App.css';
 
 function App() {

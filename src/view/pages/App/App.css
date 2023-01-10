@@ -1,7 +1,7 @@
 body { 
   min-height: 80vh;
   font-family: sans-serif;
-  background: url(../../../public/img/13-Ventura-Light.jpg);
+  background: url(../../../../public/img/13-Ventura-Light.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
