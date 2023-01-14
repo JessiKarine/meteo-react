@@ -1,0 +1,8 @@
+{
+    "WeatherAPI" : { 
+        "url" : "https://api.openweathermap.org"
+    },
+    "cityAPI" : { 
+        "url" : "https://api.openweathermap.org"
+    }
+}
