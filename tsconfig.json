@@ -6,6 +6,14 @@
       "dom.iterable",
       "esnext"
     ],
+    "paths": {
+      "@components/*" :[
+        "src/view/component/*"
+      ],
+      "@domain/*" :[
+        "src/domain/*"
+      ],
+    },
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,

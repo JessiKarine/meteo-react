@@ -41,4 +41,5 @@ export default interface Weather {
 	rain?: Volume;
 	snow?: Volume;
 	clouds: Clouds;
+	name : String
 }

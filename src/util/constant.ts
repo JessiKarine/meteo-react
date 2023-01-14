@@ -24,7 +24,4 @@ export const allCities = [
 	{ name: 'Bhutan', code: 'BT' },
 	{ name: 'Bolivia', code: 'BO' },
 ];
-
-export const BASE_URL = 'https://api.openweathermap.org';
-export const appId = 'f825344b0cf0672c689378549f9868db';
 //export const units = {'metric', 'standard', 'imperial'};
