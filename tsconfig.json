@@ -7,9 +7,6 @@
       "esnext"
     ],
     "paths": {
-      "@components/*" :[
-        "src/view/component/*"
-      ],
       "@domain/*" :[
         "src/domain/*"
       ],

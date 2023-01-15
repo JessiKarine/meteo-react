@@ -8,7 +8,7 @@ import WeatherInfo from '../../component/WeatherInfo/WeatherInfo';
 import './App.css';
 
 function App() {
-	const [citySelected, setCitySelected] = useState('London');
+	const [citySelected, setCitySelected] = useState("");
 	const [weatherData, setWeatherData] = useState(null);
 	
 	useEffect(() => {
@@ -22,8 +22,7 @@ function App() {
 			<Header />
 			<div className='window__body'>
 				<MenuSearch
-					citySelected={citySelected}
-					onChangeCity={(e) => setCitySelected(e.target.value)}
+					onChangeCity={(city : string) => setCitySelected(city)}
 				/>
 				<div className='card card--custom card--full card--results'>
 					<WeatherInfo {...weatherData} />

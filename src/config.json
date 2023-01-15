@@ -3,6 +3,6 @@
         "url" : "https://api.openweathermap.org"
     },
     "cityAPI" : { 
-        "url" : "https://api.openweathermap.org"
+        "url" : "https://countriesnow.space/api/v0.1/countries"
     }
 }

@@ -33,7 +33,7 @@ export interface Clouds {
 }
 export default interface Weather {
 	coor: Location;
-	weather: WeatherInfo;
+	weather: WeatherInfo[];
 	base: string;
 	main: WeatherCommonInfo;
 	visibility: number;
