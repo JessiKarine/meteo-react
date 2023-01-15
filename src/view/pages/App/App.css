@@ -79,7 +79,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
 }
-.card--search__item:hover { 
+.card--search__item:not(.loading):hover { 
   background-color: rgb(151, 151, 151);
   color: black;
 }
@@ -114,6 +114,7 @@ body {
 }
 .result__details { 
   padding: 30px 20px;
+  flex: 1;
 }
 .result__city { 
   font-size: 2rem;
@@ -122,6 +123,13 @@ body {
 .result__temperature { 
   font-size: 5rem;
   font-weight: bold;
+}
+.result__infos .result__icon{ 
+  width: 200px;
+  height: 200px;
+}
+.result__icon img { 
+  width: 100%;
 }
 .result__label {
   font-size: 1.2rem;
@@ -218,4 +226,32 @@ body {
   color: white;
   outline: none;
 
+}
+
+.skeleton {
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(202, 100%, 10%);
+  }
+  100% {
+    background-color: hsl(204, 15%, 26%);
+  }
+}
+
+.skeleton-text {
+  width: 100%;
+  margin-bottom: 0.5rem;
+  border-radius: 0.25rem;
+  min-height: 17px;
+}
+
+.skeleton-text__body {
+  width: 75%;
+}
+
+.skeleton-footer {
+  width: 30%;
 }
