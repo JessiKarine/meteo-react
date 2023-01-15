@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/meteo-react/static/css/main.0a6ca8ae.css",
+    "main.js": "/meteo-react/static/js/main.420a52a7.js",
+    "static/js/787.de1d8d98.chunk.js": "/meteo-react/static/js/787.de1d8d98.chunk.js",
+    "static/media/13-Ventura-Light.jpg": "/meteo-react/static/media/13-Ventura-Light.2f309895e89e1fab9b3f.jpg",
+    "index.html": "/meteo-react/index.html",
+    "main.0a6ca8ae.css.map": "/meteo-react/static/css/main.0a6ca8ae.css.map",
+    "main.420a52a7.js.map": "/meteo-react/static/js/main.420a52a7.js.map",
+    "787.de1d8d98.chunk.js.map": "/meteo-react/static/js/787.de1d8d98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a6ca8ae.css",
+    "static/js/main.420a52a7.js"
+  ]
+}
