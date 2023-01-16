@@ -24,13 +24,8 @@ function App() {
 				<MenuSearch
 					onChangeCity={(city : string) => setCitySelected(city)}
 				/>
-				<div className='card card--custom card--full card--results'>
-					<WeatherInfo {...weatherData} />
-					<div className='card__body'>
-						{weatherData?.wind && (<RainCard {...weatherData?.wind} />)}
-						{weatherData?.main && (<HumidityCard {...weatherData?.main} />)}
-					</div>
-				</div>
+					<WeatherInfo city={citySelected} />
+					
 			</div>
 		</div>
 	);

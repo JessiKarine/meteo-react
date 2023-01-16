@@ -30,9 +30,9 @@ function MenuSearch(props : MenuSearchProps) {
 		if(selectedCountry) {
 			setIsLoading(true);
 			setSelectedCity("");
-			setCitiesList([]);
-			getCitiesByCountry(selectedCountry).then((cities) => setCitiesList(cities));
-			setIsLoading(false);
+			setCitiesList(new Array(4).fill(" "));
+			getCitiesByCountry(selectedCountry).then((cities) => { setIsLoading(false); setCitiesList(cities)});
+			
 		}
 	}, [selectedCountry]);
 	return (
@@ -51,7 +51,9 @@ function MenuSearch(props : MenuSearchProps) {
 			<div className='card__body'>
 				<div className='card--search__items'>
 					{citiesList.filter((city) => city.toLowerCase().includes(searched.toLocaleLowerCase())).map((city) => (
-						<div className={["card--search__item", selectedCity === city ? "selected": ""].join(" ")} onClick={() => handleClickCity(city)}>{city}</div>
+						<div className={["card--search__item", selectedCity === city ? "selected": "" , isLoading ? "loading" : ""].join(" ")} onClick={() => !isLoading && handleClickCity(city)}>
+							<div className={[isLoading? "skeleton skeleton-text" : ""].join(" ")}>{city}</div>
+						</div>
 					))}
 				</div>
 			</div>
